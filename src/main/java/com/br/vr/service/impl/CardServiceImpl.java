@@ -7,7 +7,6 @@ import com.br.vr.model.response.CardResponse;
 import com.br.vr.repository.CardRepository;
 import com.br.vr.service.CardService;
 import lombok.extern.slf4j.Slf4j;
-import lombok.var;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.data.mongodb.core.MongoTemplate;
