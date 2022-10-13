@@ -24,7 +24,6 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 
         auth.inMemoryAuthentication()
             .withUser(username).password("{noop}"+password).roles(role);
-
     }
 
     @Override

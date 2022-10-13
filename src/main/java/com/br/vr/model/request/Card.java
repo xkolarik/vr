@@ -11,4 +11,5 @@ public class Card {
 
     private String numeroCartao;
     private String senha;
+    private Conta conta;
 }

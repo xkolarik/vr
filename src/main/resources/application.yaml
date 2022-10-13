@@ -28,3 +28,8 @@ services-security:
   username: one-dev
   password: 008a8005-c66a-4888-b115-32d95572c213
   role: API
+
+  spring:
+    data:
+      mongodb:
+      uri: mongodb://user:password@localhost:27017/mongodb

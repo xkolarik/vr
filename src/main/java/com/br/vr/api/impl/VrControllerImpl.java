@@ -2,11 +2,10 @@ package com.br.vr.api.impl;
 
 import com.br.vr.api.spec.VrController;
 import com.br.vr.model.request.Card;
+import com.br.vr.model.request.Transaction;
 import com.br.vr.model.response.CardResponse;
-import com.br.vr.model.response.CardSaldo;
 import com.br.vr.service.CardService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -16,13 +15,18 @@ public class VrControllerImpl implements VrController {
     private CardService cardService;
 
     @Override
-    @PostMapping("/cartoes")
     public CardResponse createCard(Card card) {
-        return cardService.createCard(card);
+        CardResponse response =  cardService.createCard(card);
+        return response;
     }
 
     @Override
-    public CardSaldo getCardBalance(String numeroCartao) {
-        return null;
+    public Card getCardBalance(String numeroCartao) {
+        return cardService.findCardByNumberCard(numeroCartao);
+    }
+
+    @Override
+    public Transaction transaction(Transaction transaction) {
+        return cardService.transaction(transaction);
     }
 }

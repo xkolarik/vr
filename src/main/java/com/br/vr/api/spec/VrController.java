@@ -1,6 +1,7 @@
 package com.br.vr.api.spec;
 
 import com.br.vr.model.request.Card;
+import com.br.vr.model.request.Transaction;
 import com.br.vr.model.response.CardResponse;
 import com.br.vr.model.response.CardSaldo;
 import io.swagger.annotations.Api;
@@ -29,5 +30,13 @@ public interface VrController {
             @ApiResponse(code = 400, message = "Your request has invalid information or structure"),
             @ApiResponse(code = 422, message = "An business error happened")})
     @GetMapping("/cartoes/{numeroCartao}")
-    public CardSaldo getCardBalance(@PathVariable("numeroCartao") String numeroCartao);
+    Card getCardBalance(@PathVariable("numeroCartao") String numeroCartao);
+
+    @ApiOperation(value = "Realiza uma transação", httpMethod = "POST")
+    @ApiResponses(value = {@ApiResponse(code = 201, message = "Successful request"),
+            @ApiResponse(code = 500, message = "Internal server error"),
+            @ApiResponse(code = 400, message = "Your request has invalid information or structure"),
+            @ApiResponse(code = 422, message = "An business error happened")})
+    @PostMapping("/cartoes")
+    Transaction transaction(Transaction transaction);
 }
