@@ -6,8 +6,10 @@ import com.br.vr.model.request.Transaction;
 import com.br.vr.model.response.CardResponse;
 import com.br.vr.service.CardService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RestController;
 
+@CrossOrigin(origins = "http://localhost:27017")
 @RestController
 public class VrControllerImpl implements VrController {
 

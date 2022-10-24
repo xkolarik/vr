@@ -8,8 +8,11 @@ com\br\vr\config\BeanConfiguration.class
 com\br\vr\model\request\Card.class
 com\br\vr\service\impl\CardServiceImpl.class
 com\br\vr\exception\ErrorMessage.class
+com\br\vr\model\request\Conta.class
 com\br\vr\model\response\CardResponse.class
+com\br\vr\model\request\Transaction.class
 com\br\vr\api\spec\VrController.class
 com\br\vr\service\CardService.class
+com\br\vr\mapper\CardMapper.class
 com\br\vr\config\SpringSecurityConfig.class
 com\br\vr\exception\BadRequestException.class

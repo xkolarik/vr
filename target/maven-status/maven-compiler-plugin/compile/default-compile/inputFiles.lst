@@ -9,7 +9,10 @@ C:\Users\kolarik\Desktop\teste\vr\src\main\java\com\br\vr\api\impl\VrControllerI
 C:\Users\kolarik\Desktop\teste\vr\src\main\java\com\br\vr\config\SpringSecurityConfig.java
 C:\Users\kolarik\Desktop\teste\vr\src\main\java\com\br\vr\service\CardService.java
 C:\Users\kolarik\Desktop\teste\vr\src\main\java\com\br\vr\model\response\CardResponse.java
+C:\Users\kolarik\Desktop\teste\vr\src\main\java\com\br\vr\model\request\Conta.java
+C:\Users\kolarik\Desktop\teste\vr\src\main\java\com\br\vr\model\request\Transaction.java
 C:\Users\kolarik\Desktop\teste\vr\src\main\java\com\br\vr\repository\CardRepository.java
 C:\Users\kolarik\Desktop\teste\vr\src\main\java\com\br\vr\model\response\CardSaldo.java
 C:\Users\kolarik\Desktop\teste\vr\src\main\java\com\br\vr\service\impl\CardServiceImpl.java
 C:\Users\kolarik\Desktop\teste\vr\src\main\java\com\br\vr\api\spec\VrController.java
+C:\Users\kolarik\Desktop\teste\vr\src\main\java\com\br\vr\mapper\CardMapper.java

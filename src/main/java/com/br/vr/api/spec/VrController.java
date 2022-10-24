@@ -3,7 +3,6 @@ package com.br.vr.api.spec;
 import com.br.vr.model.request.Card;
 import com.br.vr.model.request.Transaction;
 import com.br.vr.model.response.CardResponse;
-import com.br.vr.model.response.CardSaldo;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
@@ -37,6 +36,6 @@ public interface VrController {
             @ApiResponse(code = 500, message = "Internal server error"),
             @ApiResponse(code = 400, message = "Your request has invalid information or structure"),
             @ApiResponse(code = 422, message = "An business error happened")})
-    @PostMapping("/cartoes")
+    @PostMapping("/transacoes")
     Transaction transaction(Transaction transaction);
 }

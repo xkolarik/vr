@@ -1,6 +1,5 @@
 package com.br.vr.config;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -10,20 +9,9 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 @Configuration
 public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 
-    @Value("${services-security.username}")
-    private String username;
-
-    @Value("${services-security.password}")
-    private String password;
-
-    @Value("${services-security.role}")
-    private String role;
-
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-
-        auth.inMemoryAuthentication()
-            .withUser(username).password("{noop}"+password).roles(role);
+        auth.inMemoryAuthentication();
     }
 
     @Override
